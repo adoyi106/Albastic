@@ -25,12 +25,14 @@
   position: relative;
 }
 .hero {
-  max-width: 130rem;
+  max-width: 135rem;
   margin: 0 auto;
   /* padding: 0 3.2rem; */
 }
 .hero-video {
   width: 100%;
+
+  /* position: absolute; */
 
   z-index: -100;
 }
