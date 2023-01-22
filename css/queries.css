@@ -1,0 +1,32 @@
+/* 1rem = 1em = 16px
+rem = root font size
+em = current font size */
+
+/* ****************** */
+/* STYLES BELOW 1450PX, SMALLER DESKTOPS */
+/* ****************** */
+/* 14500/16px */
+@media (max-width: 90.6em) {
+  .hero {
+    max-width: 145rem;
+  }
+  .container {
+    max-width: 130rem;
+  }
+}
+
+/* ****************** */
+/* STYLES BELOW 1350PX, SMALLER DESKTOPS */
+/* ****************** */
+/* 13500/16px = 84em */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 135rem;
+  }
+  .container {
+    max-width: 120rem;
+  }
+  .heading-secondary {
+    font-size: 4.4rem;
+  }
+}

@@ -151,7 +151,7 @@ span {
   width: 25rem;
 }
 .service-text-box {
-  align-self: center;
+  align-self: start;
 }
 .service-text {
   align-self: center;
@@ -231,11 +231,18 @@ span {
   background-color: #fdf2e9;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-.btn--form {
+.btn--form,
+.btn--form:link,
+.btn--form:visited {
   padding: 1.2rem;
   background-color: #4b3501;
   color: #fdf2e9;
   align-self: end;
+}
+.btn--form:hover,
+.btn--form:active {
+  background-color: #2d2001;
+  color: #fff;
 }
 .btn--form::placeholder {
   color: #aaa;
