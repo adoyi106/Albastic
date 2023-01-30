@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--------- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,15 +47,15 @@
   <body>
     <header class="header nav-open">
       <a href="#">
-        <img src="/al.svg" class="logo" alt="Albastic logo" />
+        <img src="/images/al.svg" class="logo" alt="Albastic logo" />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Home</a></li>
-          <li><a class="main-nav-link" href="#">About us</a></li>
-          <li><a class="main-nav-link" href="#">Services</a></li>
-          <li><a class="main-nav-link" href="#">Contacts</a></li>
-          <li><a class="main-nav-link" href="#">Projects</a></li>
+          <li><a class="main-nav-link" href="#about">About us</a></li>
+          <li><a class="main-nav-link" href="#services">Services</a></li>
+          <li><a class="main-nav-link" href="#cta">Contacts</a></li>
+          <li><a class="main-nav-link" href="#projects">Projects</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -63,10 +71,10 @@
             autoplay
             muted
             loop
-            poster="/IMG_3394.JPG"
+            poster="/images/IMG_3394.JPG"
             class="hero-video"
           >
-            <source src="/HeroVideo.mp4" type="video/mp4" />
+            <source src="/videos/HeroVideo.mp4" type="video/mp4" />
           </video>
           <div class="hero-text">
             <p class="hero-description">
@@ -78,14 +86,14 @@
         </div>
       </section>
       <!-- Abouut Us section ***************************************** -->
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="container">
           <div class="about grid grid--2-col">
             <div class="about-image">
               <img
                 class="about-img"
                 alt="image of someone wearing a VR headset"
-                src="/IMG_3411.JPG"
+                src="/images/IMG_3411.JPG"
               />
             </div>
             <div class="about-text">
@@ -111,15 +119,15 @@
         </div>
       </section>
       <!-- *******************SERVICES********************************* -->
-      <section class="section-services">
+      <section class="section-services" id="services">
         <div class="container">
           <span class="subheading margin-bottom-md-3 center-text"
             >SERVICES</span
           >
           <div class="service-outline container grid grid--2-col grid--col-v">
             <!--***** 01 ********* -->
-            <!-- <div class="service grid grid--2-col"> -->
-            <div class="service-text-box">
+
+            <div class="service-text-box" id="projects">
               <div class="service-text">
                 <h3 class="heading-tertiary">Architectural Visualization</h3>
                 <p class="service-description">
@@ -132,23 +140,25 @@
             </div>
             <div class="service-img-box">
               <video controls class="service-vid">
-                <source src="/DOMINION MAISONETTES 2.mp4" type="video/mp4" />
+                <source
+                  src="/videos/DOMINION MAISONETTES 2.mp4"
+                  type="video/mp4"
+                />
               </video>
 
-              <img src="/icons8-youtube.svg" class="icon-play" />
+              <img src="/images/icons8-youtube.svg" class="icon-play" />
 
               <!-- <iframe width="320" height="240" src="/DOMINION MAISONETTES 2.mp4" frameborder="0" allowfullscreen></iframe>
       </iframe> -->
             </div>
-            <!-- </div> -->
+
             <!-- *********** 02 ****************************** -->
 
-            <!-- <div class="service grid grid--2-col s02"> -->
             <div class="service-img-box">
               <video controls class="service-vid">
-                <source src="/3dAnimation.mp4" type="video/mp4" />
+                <source src="/videos/3dAnimation.mp4" type="video/mp4" />
               </video>
-              <img src="/icons8-youtube.svg" class="icon-play" />
+              <img src="/images/icons8-youtube.svg" class="icon-play" />
             </div>
             <div class="service-text-box">
               <div class="service-text">
@@ -162,9 +172,9 @@
                 </p>
               </div>
             </div>
-            <!-- </div> -->
+
             <!-- **************** 03 ********************* -->
-            <!-- <div class="service grid grid--2-col"> -->
+
             <div class="service-text-box">
               <div class="service-text">
                 <h3 class="heading-tertiary">Virtual Reality Development</h3>
@@ -178,15 +188,15 @@
             </div>
             <div class="service-img-box">
               <video controls class="service-vid">
-                <source src="/VRDev.mp4" type="video/mp4" />
+                <source src="/videos/VRDev.mp4" type="video/mp4" />
               </video>
-              <img src="/icons8-youtube.svg" class="icon-play" />
+              <img src="/images/icons8-youtube.svg" class="icon-play" />
             </div>
-            <!-- </div> -->
+
             <!-- **************** 04 ********************* -->
-            <!-- <div class="service grid grid--2-col s04"> -->
+
             <div class="service-img-box service-img-box-4">
-              <img src="/IMG_3411.JPG" class="service-img" />
+              <img src="/images/IMG_3411.JPG" class="service-img" />
               />
             </div>
             <div class="service-text-box">
@@ -201,13 +211,12 @@
                 </p>
               </div>
             </div>
-            <!-- </div> -->
           </div>
         </div>
       </section>
 
       <!-- ********************CTA***************************************** -->
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container margin-bottom-md-3">
           <div class="cta">
             <div class="cta-textbox">
@@ -218,7 +227,7 @@
                 class="cta-form"
                 method="post"
                 name="sign-up"
-                netlifyname="sign-up"
+                netlify
               >
                 <div>
                   <label for="full-name">Full Name</label>
@@ -247,6 +256,7 @@
                     <option value="Twitter">Twitter</option>
                     <option value="WhatsApp">WhatsApp</option>
                     <option value="friends">Friends</option>
+                    <option value="others">Others</option>
                   </select>
                 </div>
                 <!-- <div></div> -->
@@ -266,7 +276,7 @@
         <div class="container grid footer-grid">
           <div class="logo-col">
             <a class="foot-logo" href="#">
-              <img src="/al.svg" class="footer-logo" />
+              <img src="/images/al.svg" class="footer-logo" />
             </a>
             <div class="socials">
               <ul class="social-links">
@@ -276,7 +286,10 @@
                     target="_blank"
                     href="mailto:albasticmediatech@gmail.com"
                   >
-                    <img src="/icons8-gmail-logo.svg" class="social-logo" />
+                    <img
+                      src="/images/icons8-gmail-logo.svg"
+                      class="social-logo"
+                    />
                   </a>
                 </li>
                 <li class="social">
@@ -285,7 +298,7 @@
                     target="_blank"
                     href="https://www.youtube.com/@Albastic"
                   >
-                    <img src="/icons8-youtube.svg" class="social-logo" />
+                    <img src="/images/icons8-youtube.svg" class="social-logo" />
                   </a>
                 </li>
               </ul>

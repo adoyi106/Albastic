@@ -172,6 +172,7 @@ span {
 .icon-play {
   /* display: none; */
   width: 9.4rem;
+  cursor: pointer;
 
   position: absolute;
   left: 25rem;
@@ -230,7 +231,7 @@ span {
       rgba(225, 159, 5, 0.582),
       rgba(200, 141, 4, 0.342)
     ),
-    url(/al11.jpeg);
+    url(/images/al11.jpeg);
   background-size: cover;
   background-position: center;
 }

@@ -90,3 +90,11 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+///////////////////////////////////////////////////////////
+// Making the play button to work
+const btnPlay = document.querySelectorAll(".icon-play");
+const serviceVid = document.querySelectorAll(".service-vid");
+btnPlay.addEventListener("click", function () {
+  alert("Working");
+  serviceVid.play();
+});
