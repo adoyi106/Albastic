@@ -302,6 +302,7 @@ em = current font size */
     width: 100%;
   }
   .icon-play {
+    display: none;
     width: 6.4rem;
     transform: translate(-119%, -56%);
   }
@@ -313,8 +314,8 @@ em = current font size */
 /* ****************** */
 /* STYLES BELOW  570PX, Smaller PHONES */
 /* ****************** */
-@media (max-width: 23em) {
+/* @media (max-width: 23em) {
   .icon-play {
     transform: translate(-158%, -68%);
   }
-}
+} */

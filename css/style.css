@@ -170,6 +170,7 @@ span {
   /* position: relative; */
 }
 .icon-play {
+  /* display: none; */
   width: 9.4rem;
 
   position: absolute;
