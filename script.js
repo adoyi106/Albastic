@@ -47,7 +47,7 @@ allLinks.forEach(function (link) {
 ///////////////////////////////////////////////////////////
 //Sticky Navigation
 
-const sectionHeroEl = document.querySelector(".section-hero");
+const sectionHeroEl = document.querySelector(".hero-section");
 
 const obs = new IntersectionObserver(
   function (entries) {
@@ -94,7 +94,10 @@ checkFlexGap();
 // Making the play button to work
 const btnPlay = document.querySelectorAll(".icon-play");
 const serviceVid = document.querySelectorAll(".service-vid");
-btnPlay.addEventListener("click", function () {
-  alert("Working");
-  serviceVid.play();
-});
+
+for (let i = 0; i < serviceVid.length; i++)
+  btnPlay[i].addEventListener("click", function () {
+    btnPlay[i] == serviceVid[i];
+    serviceVid[i].play();
+    btnPlay[i].style.opacity = 0;
+  });
