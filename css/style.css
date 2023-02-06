@@ -204,6 +204,22 @@ span {
   background-color: #0a2844;
   color: #fff;
 }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery-items {
+  overflow: hidden;
+}
+.gallery-items img {
+  display: block;
+  width: 100%;
+}
+.gallery-items img:hover {
+  transform: scale(1.1);
+}
 /* ******************************* */
 /* *********Section CTA ************* */
 /* ******************************* */
@@ -283,6 +299,33 @@ span {
 *:focus {
   outline: none;
   /* box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5); */
+}
+/*  ******************************* */
+/* Section projects */
+.section-project-hero {
+  padding: 0 4.8rem 9.6rem 4.8rem;
+  /* height: 42.8rem; */
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/project-hero.jpg);
+  background-size: cover;
+
+  /* background-clip: border-box; */
+  background-position: center;
+}
+.hero-project {
+  width: 130rem;
+  margin: 0 auto;
+  height: 24rem;
+}
+.translate {
+  transform: translateY(1400%);
+}
+/* ************************** */
+/* ****Project service */
+/* *********************** */
+.section-project-services {
+  padding: 4.8rem 4.8rem 9.6rem 4.8rem;
 }
 
 /* ********************************* */

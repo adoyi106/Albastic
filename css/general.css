@@ -156,7 +156,10 @@ body {
 
 /* Reusable styles */
 .margin-right-sm {
-  margin-right: 1.6rem !important;
+  margin-right: 2.6rem !important;
+}
+.margin-top-sm {
+  margin-top: 1.6rem !important;
 }
 .margin-bottom-md {
   margin-bottom: 2rem !important ;

@@ -36,6 +36,9 @@ allLinks.forEach(function (link) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+    if (href !== "#" && !href.startsWith("#")) {
+      window.open(link, "_blank");
+    }
   });
 
   // close mobile navigation
@@ -97,7 +100,10 @@ const serviceVid = document.querySelectorAll(".service-vid");
 
 for (let i = 0; i < serviceVid.length; i++)
   btnPlay[i].addEventListener("click", function () {
-    btnPlay[i] == serviceVid[i];
+    btnPlay[i] === serviceVid[i];
     serviceVid[i].play();
     btnPlay[i].style.opacity = 0;
+    if (serviceVid[i].play() === true) {
+      serviceVid[i].pause();
+    }
   });
