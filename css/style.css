@@ -313,6 +313,14 @@ span {
   /* background-clip: border-box; */
   background-position: center;
 }
+.arch {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/Copy\ of\ PREVIEW\ 19.jpg);
+  background-size: cover;
+
+  /* background-clip: border-box; */
+  background-position: center;
+}
 .hero-project {
   width: 130rem;
   margin: 0 auto;
