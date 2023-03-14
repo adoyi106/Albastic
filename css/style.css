@@ -58,7 +58,6 @@
 .hero {
   max-width: 135rem;
   margin: 0 auto;
-  /* padding: 0 3.2rem; */
 }
 .hero-video {
   width: 100%;
@@ -247,7 +246,7 @@ span {
       rgba(225, 159, 5, 0.582),
       rgba(200, 141, 4, 0.342)
     ),
-    url(/images/al11.jpeg);
+    url(/images/al11.svg);
   background-size: cover;
   background-position: center;
 }
@@ -269,7 +268,8 @@ span {
   margin-bottom: 1.2rem;
 }
 .cta-form input,
-.cta-form select {
+.cta-form select,
+.cta-form textarea {
   width: 100%;
   font-size: 1.8rem;
   font-weight: inherit;
@@ -283,10 +283,13 @@ span {
 .btn--form,
 .btn--form:link,
 .btn--form:visited {
+  grid-column: 3/1;
   padding: 1.2rem;
   background-color: #4b3501;
   color: #fdf2e9;
   align-self: end;
+  justify-self: center;
+  width: 40%;
 }
 .btn--form:hover,
 .btn--form:active {
@@ -307,7 +310,7 @@ span {
   /* height: 42.8rem; */
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/images/project-hero.jpg);
+    url(/images/project-hero.svg);
   background-size: cover;
 
   /* background-clip: border-box; */
@@ -315,7 +318,7 @@ span {
 }
 .arch {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/images/Copy\ of\ PREVIEW\ 19.jpg);
+    url(/images/castle.svg);
   background-size: cover;
 
   /* background-clip: border-box; */

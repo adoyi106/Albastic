@@ -89,6 +89,10 @@ em = current font size */
   .cta-form {
     grid-template-columns: 1fr;
   }
+  .btn--form,.btn--form:link,
+  .btn--form:visited {
+  grid-column: 1;
+}
   .icon-play {
     transform: translate(-44%, -35%);
   }
@@ -102,7 +106,7 @@ em = current font size */
 /* ****************** */
 @media (max-width: 49em) {
   .container {
-    max-width: 65rem;
+    max-width: 69rem;
   }
   /* .about {
     
@@ -134,7 +138,7 @@ em = current font size */
     height: 33rem;
     grid-row: 1;
   }
-  .cta-text-box {
+  .cta-textbox {
     padding: 3.2rem;
   }
 
@@ -252,21 +256,25 @@ em = current font size */
 /* STYLES BELOW  570PX, PHONES */
 /* ****************** */
 @media (max-width: 36em) {
+  .heading-tertiary {
+    font-size: 2.2rem;
+  }
   .services-col,
   .projects-col {
     grid-row: 1;
     grid-column: span 3;
   }
-  /* .logo-col {
+  
+  .logo-col {
     grid-column: span 3;
-  } */
-
-  .footer-grid {
-    grid-template-columns: 2fr 1.5fr 1.5fr;
   }
+
   /* .footer-grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 2fr 1.5fr 1.5fr;
   } */
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
   .hero {
     max-width: 66rem;
   }

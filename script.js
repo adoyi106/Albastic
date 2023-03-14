@@ -37,7 +37,7 @@ allLinks.forEach(function (link) {
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
     if (href !== "#" && !href.startsWith("#")) {
-      window.open(link, "_blank");
+      window.open(link, "_self");
     }
   });
 

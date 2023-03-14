@@ -99,11 +99,17 @@
             autoplay
             muted
             loop
-            poster="/images/IMG_3394.JPG"
+            poster="/images/IMG_3394.svg"
             class="hero-video"
           >
-            <source src="/videos/HeroVideo.mp4" type="video/mp4" />
+            <source src="/videos/CompressedHerovideo.mp4" type="video/mp4" />
           </video>
+          <!-- <iframe
+            src="https://www.youtube.com/embed/j0U2Czg9IXs?autoplay=1&mute=1"
+            title="YouTube video player"
+            class="hero-video"
+          ></iframe> -->
+
           <div class="hero-text">
             <p class="hero-description">
               Building sustainable, immersive and interactive experiences
@@ -121,7 +127,7 @@
               <img
                 class="about-img"
                 alt="image of someone wearing a VR headset"
-                src="/images/IMG_3411.JPG"
+                src="/images/IMG_3411.svg"
               />
             </div>
             <div class="about-text">
@@ -174,11 +180,21 @@
             <div class="service-img-box">
               <video controls class="service-vid">
                 <source
-                  src="/videos/DOMINION MAISONETTES 2.mp4"
+                  src="/videos/Compressed Dominion Maisonettes 2.mp4"
                   type="video/mp4"
                 />
               </video>
 
+              <!-- <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/IaoNShydQc4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                class="service-vid"
+                allowfullscreen
+              ></iframe> -->
               <img
                 src="/images/icons8-youtube.svg"
                 class="icon-play"
@@ -193,13 +209,26 @@
 
             <div class="service-img-box">
               <video controls class="service-vid">
-                <source src="/videos/3dAnimation.mp4" type="video/mp4" />
+                <source
+                  src="/videos/Compressed3Danimation.mp4"
+                  type="video/mp4"
+                />
               </video>
               <img
                 src="/images/icons8-youtube.svg"
                 class="icon-play"
                 alt="play icon"
               />
+              <!-- <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/yZrZ6FjFDqI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                class="service-vid"
+                allowfullscreen
+              ></iframe> -->
             </div>
             <div class="service-text-box">
               <div class="service-text">
@@ -233,7 +262,7 @@
             </div>
             <div class="service-img-box">
               <video controls class="service-vid">
-                <source src="/videos/VRDev.mp4" type="video/mp4" />
+                <source src="/videos/Compressed Vrdev.mp4" type="video/mp4" />
               </video>
               <img src="/images/icons8-youtube.svg" class="icon-play" />
             </div>
@@ -242,7 +271,7 @@
 
             <div class="service-img-box service-img-box-4">
               <img
-                src="/images/IMG_3394.JPG"
+                src="/images/IMG_3394.svg"
                 class="service-img"
                 alt="Students undergoing training."
               />
@@ -296,7 +325,7 @@
                   <input
                     id="full-name"
                     type="email"
-                    name="full-name"
+                    name="email"
                     placeholder="Email"
                   />
                 </div>
@@ -312,7 +341,11 @@
                     <option value="others">Others</option>
                   </select>
                 </div>
-                <!-- <div></div> -->
+                <div>
+                  <label>Message Us</label>
+                  <textarea id="message" name="name" rows="4" cols="50">
+                  </textarea>
+                </div>
                 <button class="btn btn--form">Send</button>
               </form>
             </div>
